@@ -9,8 +9,8 @@ Check out my LeetCode profile [here](https://leetcode.com/Khaaaleed_5/), where y
 ## Table of Contents
 
 - [Easy Problems](./Easy)
-- [Medium Problems](#Medium)
-- [Hard Problems](#Hard)
+- [Medium Problems](./Medium)
+- [Hard Problems](./Hard)
 
 ## Contributing
 
