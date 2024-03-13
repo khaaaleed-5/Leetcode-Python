@@ -10,7 +10,7 @@ class Solution:
     
     '''
         Another Solution :
-        
+        #1
         nums = [i for i in range(1, n + 1)]
         s = (n * (n + 1)) // 2
         cs = 0
@@ -20,5 +20,9 @@ class Solution:
                 return i
             s -= i
         return -1
+        
+        #2
+        x = sqrt(n * (n + 1) / 2)
+        return int(x) if (x % 1) == 0 else -1
         
     '''
