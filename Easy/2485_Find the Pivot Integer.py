@@ -10,17 +10,18 @@ class Solution:
     
     '''
         Another Solution :
+        -----------------------------
         #1
         nums = [i for i in range(1, n + 1)]
-        s = (n * (n + 1)) // 2
-        cs = 0
+        sum = (n * (n + 1)) // 2
+        current = 0
         for i in nums:
-            cs += i
-            if cs == s:
+            current += i
+            if current == sum:
                 return i
-            s -= i
+            sum -= i
         return -1
-        
+        -----------------------------
         #2
         x = sqrt(n * (n + 1) / 2)
         return int(x) if (x % 1) == 0 else -1
