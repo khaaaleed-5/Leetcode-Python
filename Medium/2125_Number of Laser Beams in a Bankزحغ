@@ -1,5 +1,5 @@
 class Solution:
-    def numberOfBeams(self, bank: List[str]) -> int:
+    def numberOfBeams(self, bank: list[str]) -> int:
         ans = 0
         one_1 = bank[0].count('1')
         for i in range(1, len(bank)):
