@@ -13,3 +13,17 @@ class Solution:
             else:
                 st += [s[i]]
         return ''.join(i for i in st)
+    
+    
+    '''
+    Another solution:
+    
+        st = []
+        for i in s:
+            if st and abs(ord(i) - ord(st[-1])) == 32:
+                st.pop()
+            else:
+                st += [i]
+        return ''.join(i for i in st)
+        
+    '''
