@@ -9,7 +9,7 @@ This repository contains my solutions to various LeetCode problems. The solution
 
 ## LeetCode Profile
 
-Check out my LeetCode profile [here](https://leetcode.com/Khaaaleed_5/), where you can see my progress and additional information about my coding skills.
+Check out my LeetCode profile [here](https://leetcode.com/Khaaaleed_5/), where you can see my progress
 
 ## Contributing
 
