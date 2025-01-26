@@ -1,24 +1,12 @@
-from collections import deque
-
-
 class Solution:
     def isValid(self, s: str) -> bool:
-        if len(s) == 1:
-            return False
-        my_stack = deque()
-        for i in s:
-            if i == '(' or i == '[' or i == '{':
-                my_stack.append(i)
+        st = []
+        for ch in s:
+            if ch == '[' or ch == '(' or ch == '{':
+                st += [ch]
             else:
-                c = my_stack.pop()
-                if i == ')' and c == '(':
-                    continue
-                elif i == ']' and c == '[':
-                    continue
-                elif i == '}' and c == '{':
-                    continue
-                else:
+                if not st or (ch == ']' and st.pop() != '[') or (ch == ')' and st.pop() != '(') or (ch == '}' and st.pop() != '{'):
                     return False
-        if len(my_stack):
-            return False
-        return True
+                else:
+                    continue
+        return True if not st else False
